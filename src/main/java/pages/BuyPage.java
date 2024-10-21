@@ -18,7 +18,8 @@ public class BuyPage {
         this.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         PageFactory.initElements(driver, this);
-}
+    }
+    
     @FindBy(xpath = "//button[@class='product__button']")
     WebElement submitButton1;
 

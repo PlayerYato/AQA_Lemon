@@ -37,14 +37,12 @@ public class UiTest1 {
 
     @Test
     public void UiTest1() {
-       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         mainPage.selectLocation();
         shopPage.selectionCategory();
         shopPage.selectionProduct();
         buyPage.buyButton();
         buyPage.addToCart();
-
         Assert.assertEquals(driver.getCurrentUrl(), "https://zoolandia.com.ua/ua/checkout");
 
     }

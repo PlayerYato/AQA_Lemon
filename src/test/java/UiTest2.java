@@ -36,7 +36,6 @@ public class UiTest2 {
     @Test
     public void Test(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
         homePage.searchCategory();
         homePage.buttonSearch();
         productPage.productSelection();

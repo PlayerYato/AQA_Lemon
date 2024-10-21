@@ -26,6 +26,8 @@ public class WebSite {
     public void myTest() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
+        WebElement input1 = driver.findElement(By.xpath("//input[@id='firstname']"));
+        input1.sendKeys("fdsawrtyhgd");
 
         WebElement input2 = driver.findElement(By.xpath("//input[@id='surname']"));
         input2.sendKeys("asdfghjklzx");
